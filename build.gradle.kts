@@ -15,11 +15,15 @@ repositories {
 	mavenCentral()
 }
 
+val ontrackVersion: String by project
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("net.nemerosa.ontrack:ontrack-ui:$ontrackVersion")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
