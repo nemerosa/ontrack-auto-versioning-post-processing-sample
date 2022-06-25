@@ -15,6 +15,10 @@ repositories {
 	mavenCentral()
 }
 
+dependencyLocking {
+	lockAllConfigurations()
+}
+
 val ontrackVersion: String by project
 
 dependencies {
